@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h6 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 28px;
+  color: #af4ca7;
+}
+
+h6 {
+  font-size: 16px;
+  color: #c41616;
+}
+
+table {
+  width: 70%;
+  margin: 20px auto;
+  background-color: #aa1d92;
+  border: 1px solid #ff0000;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ff1515;
+}
+
+th {
+  background-color: #885555;
+}
+
+input,
+button {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4c63af;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}

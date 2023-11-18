@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="crud.css" />
+    <title>CRUD Operations</title>
+  </head>
+
+  <body>
+    <h1>CRUD</h1>
+    <h6>Create Read Update Delete</h6>
+
+    <table>
+      <form>
+        <tr>
+          <th colspan="2">Fill the fields!</th>
+        </tr>
+        <tr>
+          <td><label for="sn">ID:</label></td>
+          <td><input id="sn" type="number" placeholder="ID" /></td>
+        </tr>
+        <tr>
+          <td><label for="f_name">First Name:</label></td>
+          <td><input id="f_name" type="text" placeholder="First Name" /></td>
+        </tr>
+        <tr>
+          <td><label for="l_name">Last Name:</label></td>
+          <td><input id="l_name" type="text" placeholder="Last Name" /></td>
+        </tr>
+        <tr>
+          <td><label for="e_mail">Email:</label></td>
+          <td><input id="e_mail" type="email" placeholder="abc@xyz.com" /></td>
+        </tr>
+        <tr>
+          <td><label for="pword">Password:</label></td>
+          <td><input id="pword" type="password" placeholder="Password" /></td>
+        </tr>
+      </form>
+      <tr>
+        <td colspan="2"><button onclick="Submit()">Submit</button></td>
+      </tr>
+      <tr>
+        <td><label for="search">Search</label></td>
+        <td>
+          <input id="search" type="text" />
+          <button onclick="Search()">Search</button>
+        </td>
+      </tr>
+    </table>
+
+    <h1>DATA</h1>
+    <div style="text-align: center">
+      <button onclick="create_table()" style="width: 100px">Show data</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="t1"></tbody>
+    </table>
+  </body>
+  <script src="crud.js"></script>
+</html>
